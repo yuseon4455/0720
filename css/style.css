@@ -113,9 +113,114 @@
   /* 콘텐츠영역 */
   #main{
     display: flex;
+    height: 200px;
   }
 
   #main .col{
     outline: 1px solid #666;
     width: 400px;
+    padding: 10px;
+  }
+
+  #notice ul li{
+    padding: 3px;
+  }
+
+  #gallery{
+    display: flex;
+  }
+
+  #gallery a {
+    display: block;
+    outline: 2px solid red;
+    padding: 10px;
+    padding-top: 0;
+  }
+
+  #gallery a img{
+    width: 100%;
+  }
+
+  /* 탭 버튼 */
+  #main .tab_buttons a.notice-btn, 
+  #main .tab_buttons a.gallery-btn {
+    outline: 1px solid #333;
+    display: block;
+    padding: 10px;
+  }
+
+  #main .tab_buttons {
+    display: flex;
+    margin-bottom: 1em;
+  }
+
+  #notice{
+    display: none;
+  }
+
+  #notice.on{
+    display: block;
+  }
+
+  #gallery{
+    display: none;
+  }
+
+  #gallery.on{
+    display: flex;
+  }
+
+  #main .banner1, #main .banner2 {
+    /* padding: 0; */
+  }
+
+  #main .col img{
+    width: 100%;
+    height: 100%;
+  }
+
+  footer{
+    background: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  footer .footer-logo {
+width: 200px;
+  }
+  
+  footer .sns {
+    width: 200px;
+  }
+
+  /* 레이어 팝업(모달) */
+  .modal{
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+  }
+
+  .modal .close-btn{
+position: absolute;
+right: 20px;
+bottom: 20px;
+  }
+
+  /* 텝버튼 스타일 */
+  .tab_buttons > a {
+    background: #fff;
+  }
+
+  .notice-btn.on,
+  .gallery-btn.on {
+    background: #fff;
   }
